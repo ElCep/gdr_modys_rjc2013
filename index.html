@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>SMA - HTML Presentation of VICTOR</title>
+
+		<meta name="description" content="VICTOR, un SMA pour explorer les dynamiques paysagère sur le temps long">
+		<meta name="author" content="Etienne DELAY">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h3>Paysage computationnel, viticulture virtuelle.</h3>
+					<h4>Histoire d'émergence spatiale</h4>
+					<p>
+						<small>Par <a href="http://recherche.flsh.unilim.fr/geolab/etienne-delay/">Etienne DELAY</a> / laboratoire GEOLAB UMR 6042 CNRS</small><br>
+						<small>Sur twitter : <a href="https://twitter.com/ElCep">@ElCep</a></small></br>
+						<small><a href="http://isa.univ-tours.fr/modys/rencontre.php?year=2013">GdR 3359 Modélisation des Dynamiques Spatiales</a> / Rencontre jeunes chercheurs 2013</small></br>
+						<small> 21 - 22 novembre 2013 / <a href="http://www.openstreetmap.org/?mlat=46.8571&mlon=6.1622#map=13/46.8571/6.1622">Frasne (25)</a></small>
+
+					</p>
+					<aside class="notes">
+					  Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<!-- INTRODUCTION SUR DES SLIDES VERTICLE avec des sections impriqué -->
+				<section>
+					<section>
+						<h2>Introduction</h2>
+					</section>
+					<section>
+						<h3>Objet d'étude : les paysages viticoles</h3>
+						<p>Paysages emblématiques de la capacité d'adaptation des sociétés qui les ont construits</br>
+						Comment explorer des comportements passés pour comprendre les formes paysagères actuelles?
+						</p>
+						<img src="img/pano-banyuls.jpg"> 
+						<small>Le vignoble de <a href="http://www.openstreetmap.org/?mlat=42.4794&mlon=3.1282#map=13/42.4795/3.1281">Banyuls-sur-Mer</a></small></br>
+						<p>Etudier le basculement sur le temps long d'une viticulture de subsistance à une viticulture 
+						d'exportation.</br>
+						Quelles sont les conséquences de la compétition spatiale entre différents types
+						d'agriculture et leurs réponses à différents marchés.</p>
+					</section>
+					<section>
+						<h3>Une réponse : la modélisation</h3>
+						<blockquote cite="http://www.amazon.fr/MODELISATION-SIMULATION-DECOSYSTEMES-d%C3%A9terministes-simulations/dp/2225853630">
+						&ldquo;un modèle est une abstraction qui simplifie le système réel étudié [...], pour se focaliser sur les aspects qui intéressent le modélisateur&rdquo;</br>
+						</blockquote>
+						<p align="right">P. Coquillard et D.R.C. Hill 1997</p>
+						<blockquote cite="http://www.amazon.fr/Mod%C3%A9liser-social-M%C3%A9thodes-fondatrices-%C3%A9volutions/dp/2100557440/ref=sr_1_1?s=books&ie=UTF8&qid=1384531308&sr=1-1">
+						&ldquo;un modèle a pour fonction d'être un instrument de facilitation d'une médiation&rdquo;</br>
+						</blockquote>
+						<p align="right">M.S. Morgan et M. Morrison 1999</p>
+					</section>
+					<section>
+						<h3>Prédire &ne; Expliquer</h3>
+						<blockquote cite="http://www.amazon.fr/Pr%C3%A9dire-nest-expliquer-Rene-Thom/dp/2081224984/ref=sr_1_1?ie=UTF8&qid=1384529013&sr=8-1&keywords=predire+n%27est+pas+expliquer">
+						&ldquo;La théorisation [...] est liée à la possibilité de plonger le réel dans un virtuel imaginaire, doté de propriétés génératives, qui permettent de faire des prévisions&rdquo;</br>
+						</blockquote>
+						<p align="right">R. Thom 2009</p>
+						<a href="http://www.amazon.fr/Pr%C3%A9dire-nest-expliquer-Rene-Thom/dp/2081224984/ref=sr_1_1?ie=UTF8&qid=1384529013&sr=8-1&keywords=predire+n%27est+pas+expliquer">
+						  <img width="160" height="238" src="img/thom.jpg" alt="couverture livre Rene Thom">
+						</a>
+					</section>
+					<section>
+						<h3>Posture</h3>
+						<blockquote cite="http://www.amazon.fr/Pr%C3%A9dire-nest-expliquer-Rene-Thom/dp/2081224984/ref=sr_1_1?ie=UTF8&qid=1384529013&sr=8-1&keywords=predire+n%27est+pas+expliquer">
+						&ldquo;Growing Artificial Societies from Bottom Up&rdquo;</br>
+						</blockquote>
+						<p align="right">J.M Epstein et R. Axtell 1996</p>
+						<p align="left">Dans cette lignée nous avons :</p>
+						<ul>
+						  <li>travaillé sur un monde et des sociétés virtuels</li>
+						  <li>autour d'un individualisme méthodologique</li>
+						  <li>réduit le système à des interactions essentielles</li>
+						</ul>
+						
+					</section>
+					<section data-background="img/Plaque_assay_macro.jpg" data-background-transition="slide">
+						<h3>Les systèmes multi-agents (SMA), définition</h3>
+						<blockquote>
+						<p>&ldquo;Un agent est une entité physique ou virtuelle</p>
+						<ul>
+						<li>Capable d'agir dans un environnement</li>
+						<li>Mue par un ensemble de tendances (sous forme d'objectifs)</li>
+						<li>Capable de percevoir (de manière limitée) son environnement</li>
+						<li>Dont le comportement tend à satisfaire ses objectifs&rdquo;</li>
+						</ul>
+						</blockquote>
+						<p align="right">J. Ferber 1995</p>
+						<small>crédit photo : <a href="http://fr.wikipedia.org/wiki/Fichier:Plaque_assay_macro.jpg">Y tambe</a> in wikimedia commons</small>
+					</section>
+					
+				</section>
+				<!-- MATERIELS ET METHODES-->
+				<section>
+					<section>
+						<h2>Matériels et méthodes</h2>	
+					</section>
+					<section data-background="img/Johann_Heinrich_von_Thünen_Duke.png" data-background-transition="slide">
+						<h3>En deux mots ... Principes de base</h3>
+						<p align="left">Complexification des hypothèses de <a href="http://fr.wikipedia.org/wiki/Von_Th%C3%BCnen">Von-Thünen</a> (1826)</p>
+						<ol>
+						  <li>inégale fertilité du sol</li>
+						  <li>multiplicité des marchés urbains</li>
+						  <li>tension de <em>l'infield/outfield</em></li>
+						</ol>
+						<small>crédit photo : <a href="http://commons.wikimedia.org/wiki/File:Johann_Heinrich_von_Th%C3%BCnen_Duke.png">AndreasPraefcke</a> in Wikimedia-commons</small>
+						<aside class="notes">
+						  Von Thünen a développé les bases mathématiques de la théorie de la productivité marginale.</br>
+						  <ul>
+						    <li> le producteur cherche à maximiser le profit de sa terre</li>
+						    <li> utilisation optimale des surfaces et des coûts de transport </li>
+						  </ul>
+						  <b>Von Thünen conclut que la production d’une denrée ne vaut la peine qu’à une distance donnée du marché. 
+						  En dehors de cette distance, soit le coût de la terre (rente foncière) ou de transport devient trop élevé, soit une autre culture est plus rentable.</b>
+						</aside>
+					</section>
+					<section data-background-transition="slide">
+						<h3>En deux mots ... Les objets en présence</h3>
+						<ol>
+						  <li>Les localités</li>
+						  <ul>
+						    <li>La localité centrale</li>
+						    <li>Les localités satellites</li>
+						  </ul>
+						  <li>Les parcelles</li>
+						  <ul>
+						    <li>la vigne</li>
+						    <li>les céréales</li>
+						  </ul>
+						  <li>Les marchés</li>
+						  <ul>
+						    <li>sur une fonction linéaire</li>
+						    <li>sur une fonction logistique</li>
+						  </ul>
+						</ol>
+						
+					</section>
+					<section>
+						<h3>En deux mots ... comment ça fonctionne ?</h3>
+						<img height="350" src="img/dessin-schema.png" alt="schema sous modèle">
+						<ul>
+						  <li>n°1 : Extension/rétractation des parcelles pour chaque localité</li>
+						  <li>n°2 : Mise à jour du capital des localités</li>
+						  <li>n°3 : Évolution de la <a href="#/6/1">population</a> des localités</li>
+						  <li>n°4 : Mise à jour du prix d'achat et de vente des productions (<a href="#/6/3">logistique</a> ou <a href="#/6/2">linéaire</a>) de manière généralisée à tout le système</li>
+						</ul>
+					</section>
+					<section>
+						<h3>En deux mots ... qu'est-ce qu'on a mis derrière?</h3>
+					<ol>
+					  <li>Un modèle multi-agents sur <a href="http://ccl.northwestern.edu/netlogo/">Netlogo</a></li>
+					  <li>Une analyse de sensibilité avec <a href="http://www.openmole.org/">OPENMOLE</a> sur <a href="http://www.unilim.fr/sci/wiki/cali/accueil">CALI</a></li>
+					  <li>Une exploration des résultats avec <a href="http://www.r-project.org/">R</a></li>							
+					</ol>
+					<small>Les paramétrisations des simulations sont en <a href="#/6/4">annexes</a></small>
+					</section>
+				</section>
+				<!-- RESULTATS et DISCUSSIONs-->
+				<section>
+					<section>
+					  <h2>Résultats et discussions</h2>
+					</section>
+					<section>
+					  <h4>Isotropie, anisotropie, espace de compétition</h4>
+					  <h3>Les agents face au monde</h3>
+					  <img height="450" src="img/isoAnisoLocalCites.png" alt="population de localités en fonction de l'environnement chargé à l'initialisation">
+					  <p>
+					    La compétition entre les agents ne varie pas fonction des différents espaces, mais...
+					  </p>
+					</section>
+					<section>
+					  <h4>Isotropie, anisotropie, espace de compétition</h4>
+					  <h3>Les parcelles face au monde</h3>
+					  <img height="450" src="img/isoWord.png" alt="population de vigne et céréale en fonction de l'environnement chargé à l'initialisation">
+					  <p>
+					    ...la stratégie change, en particulier pour les céréales (graphe b)
+					  </p>
+					</section>
+					<section data-background="img/simpledesktops.comLandscap.png" data-background-transition="slide">
+					  <h4>Isotropie, anisotropie, espace de compétition</h4>
+					  <h3>Discussions</h3>
+					  <ul>
+					    <li>On constate une compétition similaire entre les agents à l'échelle des localités</li>
+					    <li>En changeant d'échelle, on se rend compte qu'elle ne se matérialise pas de la même manière en fonction des conditions initiales</li>
+					    <li>Les agents surmontent le déterminisme géographique</li>
+					  </ul>
+					  <small>crédit photo : <a href="http://simpledesktops.com/browse/desktops/2013/may/21/landscape_/">AndreeInProgress</a> in simpledesktops.com</small>
+					</section>
+					<section>
+					  <h4>Conséquence de la macro-économie</h4>
+					  <h3>Marché logistique VS marché linéaire </h3>
+					  <p>conséquence sur les parcelles</p>
+					  <img height="450" src="img/logistiqueVSLinéaire.png" alt="parcelles de vigne et céréales sous contrainte logistique et linaire">
+					</section>
+					<section data-transition="concave">
+					  <h4>Conséquence de la macro-économie</h4>
+					  <h3>Marché logistique VS marché linéaire </h3>
+					  <p>conséquence sur l'utilisation du sol</p>
+					  <img height="450" src="img/logistiqueVSLinéaire2.png" alt="parcelles de vigne et céréales sous contrainte logistique">
+					</section>
+					<section data-background-transition="slide">
+					  <h4>Conséquence de la macro-économie</h4>
+					  <h3>Discussions</h3>
+					  <ol>
+					    <li>Un marché linéaire :</li>
+					      <ul>
+						<li>est plus stable sur le temps long</li>
+						<li>permet un meilleur développement viticole</li>
+						<li>produit un paysage relativement équilibré entre les cultures</li>
+						<li>reflète un modèle où les territoires ont une meilleure anticipation</li>
+					      </ul>
+					    <li>Un marché logistique :</li>
+					      <ul>
+						<li>fait la part plus belle au déterminisme local</li>
+						<li>reflète un modèle taxé par l'extérieur</li>
+					      </ul>
+					  </ol>
+					  
+					</section>
+				</section>
+				<!-- CONCULSION -->
+				<section>
+					<section>
+					<h2> Conclusion</h2>
+					</section>
+					<section data-background="img/cembra2nb.jpg" data-background-transition="slide">
+						<h3>Des conclusions sur le modèle</h3>
+						<ul>
+						  <li>L'espace influence moins la survie des localités que la répartitions des parcelles dans l'espace</li>
+						  <li>La demande a une conséquence forte sur la structuration des paysages</li>							
+						</ul>
+						<small>crédit photo : E.DELAY</small>
+					</section>
+					<section>
+						<h3>Les SMA, le temps long et les SHS</h3>
+						<p align="left" >Les SMA permettent :						
+						</p>
+						<ol>
+						<li>d'accompagner la réflexion du chercheur</li>
+						<li>d'explorer des comportements et des configurations difficilement envisageables</li>
+						<li>de préparer à la réception et à l'identification de comportements réels</li>							
+						</ol>
+						
+					</section>
+					<section>
+						<h3>Une co-construction entre histoire et géographie</h3>
+						<p>Un travail réalisé avec <a hraf="http://www.univ-tours.fr/recherche/equipe-laboratoire-archeologie-et-territoires-citeres-lat--116951.kjsp">
+						Laboratoire Archéologie et Territoire</a> de l'UMR 7324 CITERES (Tours)
+						</p>
+						<p align="left">
+						Deux pistes pour la suite : 
+						<ol>
+						  <li>affiner la granularité des agents pour explorer les implications des comportements</li>
+						  <li>explorer le modèle sous un autre angle</li>
+						</ol>
+						</p>
+					</section>
+				</section>
+				<section data-background="img/fin.jpg" data-background-transition="slide">
+					<h1>Merci de votre</br>attention</h1>
+					
+					<small>réalisé avec <a href="https://github.com/hakimel/reveal.js">reveal.js</a></small></br>
+					<small>crédit photo : <a href="http://www.flickr.com/photos/misnyot/6357634305/sizes/m/in/photostream/">Thomas Misnyovszki </a> on Flick'r</small>
+				</section>
+				<!-- ANNEXES -->
+				<section>
+					<section>
+					<h2> Annexes</h2>
+					</section>
+					<section>
+						<h3>L'évolution de la population</h3>
+						<p align="left" >La population est une valeur attributaire des agents localités, elle est recalculée à chaque itération par :</p>
+						  \[ n_{t+1}=n_{t}+a*n_{t}*\frac{1-n_{t}}{n_{max}} \]
+						<p><em>a</em> est positif ou négatif en fonction de la pénurie ou de l'abondance en nourriture</p>
+						<small><a href="#/2/2">retour</a></small>
+					</section>
+					<section>
+						<h3>L'évolution linéaire du marché</h3>
+						<p align="left" >S'applique sur le volume total de parcelles
+						</p>
+						  \[ p=\frac{(n_{tot}-n_{c})*100}{n_{tot}} \]
+						  <small><a href="#/2/2">retour</a></small>
+					</section>
+					<section>
+						<h3>L'évolution logistique du marché</h3>
+						<p align="left" >S'applique que la différence entre les parcelles actuelles et celles du tour précédent	
+						</p>
+						  \[ p_{t+1}=p_{t}+b*p_{t}*\frac{1-p_{t}}{p_{max}} \]
+						  <img height="350" src="img/logictiquePrice.png" alt="comparaison logistique et linéaire">
+						  <small><a href="#/2/2">retour</a></small>
+					</section>
+					<section>
+						<h3>Les simulations</h3>
+						<p align="left">Nous avons cherché à observer :</p>
+						<ul>
+						  <li>l'effet de l'isotropie et anisotropie, et de la position initiale dans l'espace</li>
+						  <li>l'effet du nombre d'agents "village" sur le comportement du système</li>
+						  <li>l'effet d'une macro-économie basée sur une fonction linéaire et logistique</li>
+						</ul>
+						<p align="left">Chaque paramétrisation a été testée 30 fois avec un maximum de 300 itérations (soit 470 simulations de 300 itérations). </br>
+						Nous nous sommes intéressés à la surface en céréales et en vigne, à l'utilisation du sol en fonction de la culture 
+						et au nombre de villages qui perdurent dans le temps.</p>
+						<small><a href="#/2/3">retour</a></small>
+					</section>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				math: {
+					// mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'plugin/math/math.js', async: true },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
