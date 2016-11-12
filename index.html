@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -37,13 +37,12 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h3>Paysage computationnel, viticulture virtuelle.</h3>
-					<h4>Histoire d'émergence spatiale</h4>
+					<h2>Paysage computationnel, viticulture virtuelle.</h2>
+					<h3>Histoire d'émergence spatiale</h3>
 					<p>
-						<small>Par <a href="http://recherche.flsh.unilim.fr/geolab/etienne-delay/">Etienne DELAY</a> / laboratoire GEOLAB UMR 6042 CNRS</small><br>
-						<small>Sur twitter : <a href="https://twitter.com/ElCep">@ElCep</a></small></br>
-						<small><a href="http://isa.univ-tours.fr/modys/rencontre.php?year=2013">GdR 3359 Modélisation des Dynamiques Spatiales</a> / Rencontre jeunes chercheurs 2013</small></br>
-						<small> 21 - 22 novembre 2013 / <a href="http://www.openstreetmap.org/?mlat=46.8571&mlon=6.1622#map=13/46.8571/6.1622">Frasne (25)</a></small>
+						<small>Par <a href="http://recherche.flsh.unilim.fr/geolab/etienne-delay/">Etienne DELAY</a>, Samuel LETURCQ et Xavier RODIER</small></br>
+						<small><a href="https://vititerroi.hypotheses.org/">VitiTerroir</a> / Séminaire final</small></br>
+						<small> 14 novembre 2016/ <a href="https://www.openstreetmap.org/#map=14/47.3640/0.6804">Tours (37)</a></small>
 
 					</p>
 					<aside class="notes">
@@ -62,9 +61,9 @@
 						</p-->
 						<p>Comment explorer des comportements passés pour comprendre les formes paysagères actuelles?
 						</p>
-						<img src="img/pano-banyuls.jpg"> 
+						<img src="img/pano-banyuls.jpg">
 						<small>Le vignoble de <a href="http://www.openstreetmap.org/?mlat=42.4794&mlon=3.1282#map=13/42.4795/3.1281">Banyuls-sur-Mer</a></small></br>
-						<p>Etudier le basculement sur le temps long d'une viticulture de subsistance à une viticulture 
+						<p>Etudier le basculement sur le temps long d'une viticulture de subsistance à une viticulture
 						d'exportation.</br>
 						Quelles sont les conséquences de la compétition spatiale entre différents types
 						d'agriculture et leurs réponses à différents marchés.</p>
@@ -102,7 +101,6 @@
 						  <li>autour d'un individualisme méthodologique</li>
 						  <li>réduit le système à des interactions essentielles</li>
 						</ul>
-						
 					</section>
 					<section data-background="img/Plaque_assay_macro.jpg" data-background-transition="slide">
 						<h3>Les systèmes multi-agents (SMA), définition</h3>
@@ -118,12 +116,18 @@
 						<p align="right">J. Ferber 1995</p>
 						<small>crédit photo : <a href="http://fr.wikipedia.org/wiki/Fichier:Plaque_assay_macro.jpg">Y tambe</a> in wikimedia commons</small>
 					</section>
-					
+
 				</section>
 				<!-- MATERIELS ET METHODES-->
 				<section>
 					<section>
-						<h2>Matériels et méthodes</h2>	
+						<h2>Matériels et méthodes</h2>
+					</section>
+					<section>
+						<h2>Share it !</h2>
+						<p><a href = "https://github.com/ElCep/victor_cybergeo">https://github.com/ElCep/victor_cybergeo</a></p>
+						<p>Le modèles est distribué sous licence Creative Commons By-SA sur github</<p></br>
+						<img height="450" src="img/Octocat.png" alt="population de localités en fonction de l'environnement chargé à l'initialisation">
 					</section>
 					<section data-background="img/Johann_Heinrich_von_Thünen_Duke.png" data-background-transition="slide">
 						<h3>En deux mots ... Principes de base</h3>
@@ -132,7 +136,7 @@
 						  <li>inégale fertilité du sol</li>
 						  <li>multiplicité des marchés urbains</li>
 						  <li>tension de <em>l'infield/outfield</em></li>
-						</ol>
+						</ol></br>
 						<small>crédit photo : <a href="http://commons.wikimedia.org/wiki/File:Johann_Heinrich_von_Th%C3%BCnen_Duke.png">AndreasPraefcke</a> in Wikimedia-commons</small>
 						<aside class="notes">
 						  Von Thünen a développé les bases mathématiques de la théorie de la productivité marginale.</br>
@@ -140,7 +144,7 @@
 						    <li> le producteur cherche à maximiser le profit de sa terre</li>
 						    <li> utilisation optimale des surfaces et des coûts de transport </li>
 						  </ul>
-						  <b>Von Thünen conclut que la production d’une denrée ne vaut la peine qu’à une distance donnée du marché. 
+						  <b>Von Thünen conclut que la production d’une denrée ne vaut la peine qu’à une distance donnée du marché.
 						  En dehors de cette distance, soit le coût de la terre (rente foncière) ou de transport devient trop élevé, soit une autre culture est plus rentable.</b>
 						</aside>
 					</section>
@@ -163,7 +167,7 @@
 						    <li>sur une fonction <a href="#/6/3">logistique</a></li>
 						  </ul>
 						</ol>
-						
+
 					</section>
 					<section>
 						<h3>En deux mots ... comment ça fonctionne ?</h3>
@@ -176,13 +180,24 @@
 						</ul>
 					</section>
 					<section>
+						<h3>Les simulations</h3>
+						<p align="left">Nous avons cherché à observer :</p>
+						<ul>
+						  <li>l'effet de l'isotropie et anisotropie, et de la position initiale dans l'espace</li>
+						  <li>l'effet du nombre d'agents "village" sur le comportement du système</li>
+						  <li>l'effet d'une macro-économie basée sur une fonction linéaire et logistique</li>
+						</ul>
+						<p align="left">Chaque paramétrisation a été testée 30 fois avec un maximum de 300 itérations (soit 470 simulations de 300 itérations). </br>
+						Nous nous sommes intéressés à la surface en céréales et en vigne, à l'utilisation du sol en fonction de la culture
+						et au nombre de villages qui perdurent dans le temps.</p>
+					</section>
+					<section>
 						<h3>En deux mots ... qu'est-ce qu'on a mis derrière?</h3>
 					<ol>
 					  <li>Un modèle multi-agents sur <a href="http://ccl.northwestern.edu/netlogo/">Netlogo</a></li>
 					  <li>Une analyse de sensibilité avec <a href="http://www.openmole.org/">OPENMOLE</a> sur <a href="http://www.unilim.fr/sci/wiki/cali/accueil">CALI</a></li>
-					  <li>Une exploration des résultats avec <a href="http://www.r-project.org/">R</a></li>							
+					  <li>Une exploration des résultats avec <a href="http://www.r-project.org/">R</a></li>
 					</ol>
-					<small>Les paramétrisations des simulations sont en <a href="#/6/4">annexes</a></small>
 					</section>
 				</section>
 				<!-- RESULTATS et DISCUSSIONs-->
@@ -206,13 +221,20 @@
 					    ...la stratégie change, en particulier pour les céréales (graphe b)
 					  </p>
 					</section>
-					<section data-background="img/simpledesktops.comLandscap-sombre.png" data-background-transition="slide">
+					<section>
+					  <h4>Isotropie, anisotropie, espace de compétition</h4>
+					  <h3>L'historicité et ses traces spactiales</h3>
+						<p>historicité de certaines affectations de parcelles est vestiges d'une compétition avec des localités qui ont disparues. </p>
+					  <img height="450" src="img/ticks/VOCTOR_views.png" alt="histoire de l'espace">
+					</section>
+					<section data-background="img/simpledesktops.png" data-background-transition="slide">
 					  <h4>Isotropie, anisotropie, espace de compétition</h4>
 					  <h3>Discussions</h3>
 					  <ul>
 					    <li>On constate une compétition similaire entre les agents à l'échelle des localités</li>
 					    <li>En changeant d'échelle, on se rend compte qu'elle ne se matérialise pas de la même manière en fonction des conditions initiales</li>
-					    <li>Les agents surmontent le déterminisme géographique</li>
+					    <li>Les agents surmontent le déterminisme géographique ...</li>
+							<li>... in déterminisme socio-spatial plus marquant !</li>
 					  </ul>
 					  <small>crédit photo : <a href="http://simpledesktops.com/browse/desktops/2013/may/21/landscape_/">AndreeInProgress</a> in simpledesktops.com</small>
 					</section>
@@ -245,7 +267,7 @@
 						<li>reflète un modèle taxé par l'extérieur</li>
 					      </ul>
 					  </ol>
-					  
+
 					</section>
 				</section>
 				<!-- CONCULSION -->
@@ -257,38 +279,25 @@
 						<h3>Des conclusions sur le modèle</h3>
 						<ul>
 						  <li>L'espace influence moins la survie des localités que la répartitions des parcelles dans l'espace</li>
-						  <li>La demande a une conséquence forte sur la structuration des paysages</li>							
+						  <li>La demande a une conséquence forte sur la structuration des paysages</li>
 						</ul>
 						<small>crédit photo : E.DELAY</small>
 					</section>
 					<section>
 						<h3>Les SMA, le temps long et les SHS</h3>
-						<p align="left" >Les SMA permettent :						
+						<p align="left" >Les SMA permettent :
 						</p>
 						<ol>
 						<li>d'accompagner la réflexion du chercheur</li>
 						<li>d'explorer des comportements et des configurations difficilement envisageables</li>
-						<li>de préparer à la réception et à l'identification de comportements réels</li>							
+						<li>de préparer à la réception et à l'identification de comportements réels</li>
 						</ol>
-						
-					</section>
-					<section>
-						<h3>Une co-construction entre histoire et géographie</h3>
-						<p>Un travail réalisé avec <a hraf="http://www.univ-tours.fr/recherche/equipe-laboratoire-archeologie-et-territoires-citeres-lat--116951.kjsp">
-						Laboratoire Archéologie et Territoire</a> de l'UMR 7324 CITERES (Tours)
-						</p>
-						<p align="left">
-						Deux pistes pour la suite : 
-						<ol>
-						  <li>affiner la granularité des agents pour explorer les implications des comportements</li>
-						  <li>explorer le modèle sous un autre angle</li>
-						</ol>
-						</p>
+
 					</section>
 				</section>
 				<section data-background="img/fin.jpg" data-background-transition="slide">
 					<h1>Merci de votre</br>attention</h1>
-					
+
 					<small>réalisé avec <a href="https://github.com/hakimel/reveal.js">reveal.js</a></small></br>
 					<small>crédit photo : <a href="http://www.flickr.com/photos/misnyot/6357634305/sizes/m/in/photostream/">Thomas Misnyovszki </a> on Flick'r</small>
 				</section>
@@ -313,24 +322,11 @@
 					</section>
 					<section>
 						<h3>L'évolution logistique du marché</h3>
-						<p align="left" >S'applique que la différence entre les parcelles actuelles et celles du tour précédent	
+						<p align="left" >S'applique que la différence entre les parcelles actuelles et celles du tour précédent
 						</p>
 						  \[ p_{t+1}=p_{t}+b*p_{t}*\frac{1-p_{t}}{p_{max}} \]
 						  <img height="350" src="img/logictiquePrice.png" alt="comparaison logistique et linéaire">
 						  <small><a href="#/2/2">retour</a></small>
-					</section>
-					<section>
-						<h3>Les simulations</h3>
-						<p align="left">Nous avons cherché à observer :</p>
-						<ul>
-						  <li>l'effet de l'isotropie et anisotropie, et de la position initiale dans l'espace</li>
-						  <li>l'effet du nombre d'agents "village" sur le comportement du système</li>
-						  <li>l'effet d'une macro-économie basée sur une fonction linéaire et logistique</li>
-						</ul>
-						<p align="left">Chaque paramétrisation a été testée 30 fois avec un maximum de 300 itérations (soit 470 simulations de 300 itérations). </br>
-						Nous nous sommes intéressés à la surface en céréales et en vigne, à l'utilisation du sol en fonction de la culture 
-						et au nombre de villages qui perdurent dans le temps.</p>
-						<small><a href="#/2/4">retour</a></small>
 					</section>
 				</section>
 			</div>
